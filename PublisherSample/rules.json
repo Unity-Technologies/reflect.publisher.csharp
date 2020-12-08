@@ -1,0 +1,14 @@
+[
+  // Merge all child objects/meshes into root object when parent contains the "Merge" key
+  {
+    "Condition": {
+          "$type": "ParameterValueComparison",
+          "ComparisonCriteria": "Contains",
+          "IsCaseSensitive": false,
+          "ParameterName": "Merge"
+    },
+    "Action": {
+      "$type": "MergeChildObjects"
+    }
+  }
+]
