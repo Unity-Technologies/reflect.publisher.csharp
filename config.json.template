@@ -1,5 +1,11 @@
 {
-    "idToken" : "",
-    "projectId" : "",
-    "serverId" : ""
+  "idToken": "",
+  "projectId": "",
+  "serverId": "",
+  "settings": {
+    "AxisInversion": 0,
+    "CustomUnitCoefficient": 1,
+    "LengthUnit": 0,
+    "PreserveUvs": false
+  }
 }

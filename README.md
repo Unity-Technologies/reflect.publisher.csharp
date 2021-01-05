@@ -8,6 +8,9 @@ Node : only Windows is supported right now.
 This is a small project that showcases how to use the Publisher API in about 100 lines of code.
 This "tiny exporter" creates hardcoded models and sends them to Reflect, using the C# Reflect API, and can be launched either in GUI or in console mode.
 
+### ConfigFileCreator
+This is a tiny utilitary program that helps create a config file, which can be very useful for automated publishing.
+
 ## Publisher API overview
 Take a look at the [Reflect documentation](https://docs.unity3d.com/reflect/manual/devguide/DevGuide.html) for a Publisher API overview.
 
@@ -21,8 +24,4 @@ For this reason, the Reflect UI can be skipped and replaced with a predefined co
 You simply need to create a `REFLECT_UI_CONFIG_PATH` env variable, and set the absolute path to your config path as a value.
 
 The `config.json.template` file, at the root of this repository, indicates what your config file should look like.
-
-For now, the only way to retrieve the expected config file values is manually, by setting a breakpoint after calling the actual Reflect UI. If you inspect the returned `PublisherSettings` object, here's where you can find the values :
-- idToken : `User.AccessToken`
-- projectId : `TargetProject.ProjectId`
-- serverId : `TargetProject.Host.ServerId`
+You can generate your own config file by running the ConfigFileCreator utilitary. Note that the user token that is set in the config value expires after 30 days.

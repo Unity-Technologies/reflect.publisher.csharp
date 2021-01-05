@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
+using Unity.Reflect;
 using Unity.Reflect.Utils;
 
-namespace Unity.Reflect.PublisherSample
+namespace PublisherSample
 {
     public partial class SampleGUI : Form, ILogReceiver
     {
