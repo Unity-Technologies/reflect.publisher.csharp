@@ -4,6 +4,10 @@ Node : only Windows is supported right now.
 
 ## Contents
 
+### Reflect Nugets
+We provide our C# Nugets directly in this repository, in the `nugets` folder.
+Due to a current limitation, the current 2.0.1 nugets should only be used along with the [2.0.1.12](https://downloads.reflect.unity3d.com/archive/2.0.1.12/ReflectInstaller.exe) version of Reflect.
+
 ### PublisherSample
 This is a small project that showcases how to use the Publisher API in about 100 lines of code.
 This "tiny exporter" creates hardcoded models and sends them to Reflect, using the C# Reflect API, and can be launched either in GUI or in console mode.
