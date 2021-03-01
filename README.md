@@ -4,6 +4,9 @@ Node : only Windows is supported right now.
 
 ## Contents
 
+### Reflect Nugets
+We provide our C# Nugets directly in this repository, in the `nugets` folder.
+
 ### PublisherSample
 This is a small project that showcases how to use the Publisher API in about 100 lines of code.
 This "tiny exporter" creates hardcoded models and sends them to Reflect, using the C# Reflect API, and can be launched either in GUI or in console mode.
