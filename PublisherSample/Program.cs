@@ -2,8 +2,9 @@
 using Unity.Reflect.Utils;
 using System.Windows.Forms;
 using System.Linq;
+using Unity.Reflect;
 
-namespace Unity.Reflect.PublisherSample
+namespace PublisherSample
 {
     public class Program : ILogReceiver
     {

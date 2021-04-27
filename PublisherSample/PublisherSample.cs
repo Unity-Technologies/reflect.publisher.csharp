@@ -7,8 +7,9 @@ using Unity.Reflect.UI;
 using System.Reflection;
 using System.Timers;
 using System.IO;
+using Unity.Reflect;
 
-namespace Unity.Reflect.PublisherSample
+namespace PublisherSample
 {
     public class PublisherSample
     {

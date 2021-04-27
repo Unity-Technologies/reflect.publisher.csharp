@@ -1,4 +1,4 @@
-﻿namespace Unity.Reflect.PublisherSample
+﻿namespace PublisherSample
 {
     partial class SampleGUI
     {
