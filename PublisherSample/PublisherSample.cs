@@ -13,6 +13,8 @@ namespace PublisherSample
 {
     public class PublisherSample
     {
+        internal const string PublisherLogComponent = "PublisherSample";
+
         public static void Run(PublishType publishType)
         {
             var sample = new PublisherSample();
@@ -36,9 +38,9 @@ namespace PublisherSample
                 // If the user cancels (or in a few other cases), we don't want to export data.
                 if (settings != null)
                 {
-                    Logger.Info($"Logged in as {settings.User.DisplayName}");
-                    Logger.Info($"Target project : {settings.TargetProject.Name}");
-                    Logger.Info($"Target sync server : {settings.TargetProject.Host.ServerName}");
+                    Logger.Info($"Logged in as {settings.User.DisplayName}", PublisherLogComponent);
+                    Logger.Info($"Target project : {settings.TargetProject.Name}", PublisherLogComponent);
+                    Logger.Info($"Target sync server : {settings.TargetProject.Host.ServerName}", PublisherLogComponent);
 
                     // Let's customize the settings before opening the client
                     CustomizePublisherSettings(settings);
@@ -69,12 +71,12 @@ namespace PublisherSample
                 }
                 else
                 {
-                    Logger.Warn("No project selected.");
+                    Logger.Info("No project selected.", PublisherLogComponent);
                 }
             }
             catch (Exception e)
             {
-                Logger.Error(e.ToString());
+                Logger.Error(e.ToString(), PublisherLogComponent);
             }
         }
 
