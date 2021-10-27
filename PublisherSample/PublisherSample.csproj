@@ -38,7 +38,7 @@
     <StartupObject>PublisherSample.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Unity.Reflect.UI">
+    <PackageReference Include="com.unity.reflect.develop.ui">
       <Version>0.0.1-dev</Version>
     </PackageReference>
   </ItemGroup>
