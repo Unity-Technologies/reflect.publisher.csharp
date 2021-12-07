@@ -49,8 +49,8 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Unity.Reflect.UI">
-      <Version>2.2.0</Version>
+    <PackageReference Include="com.unity.reflect.develop.ui">
+      <Version>3.0.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
