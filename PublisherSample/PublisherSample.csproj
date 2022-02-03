@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="com.unity.reflect.develop.ui">
-      <Version>3.0.1</Version>
+      <Version>3.1.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
